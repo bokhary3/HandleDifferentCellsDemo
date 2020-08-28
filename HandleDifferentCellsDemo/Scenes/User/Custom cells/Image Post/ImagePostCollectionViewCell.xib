@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImagePostCell" id="UM5-Rs-cFR" customClass="ImagePostCollectionViewCell" customModule="HandleDifferentCellsDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="153" height="179"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="G2S-G2-6AR">
+                <rect key="frame" x="0.0" y="0.0" width="153" height="179"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nas-ok-xFc">
+                        <rect key="frame" x="0.0" y="0.0" width="153" height="179"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Nas-ok-xFc" firstAttribute="width" secondItem="G2S-G2-6AR" secondAttribute="width" id="NnA-fm-h7q"/>
+                    <constraint firstItem="Nas-ok-xFc" firstAttribute="centerX" secondItem="G2S-G2-6AR" secondAttribute="centerX" id="hHS-zz-6cn"/>
+                    <constraint firstItem="Nas-ok-xFc" firstAttribute="centerY" secondItem="G2S-G2-6AR" secondAttribute="centerY" id="lcT-Hk-z7V"/>
+                    <constraint firstItem="Nas-ok-xFc" firstAttribute="height" secondItem="G2S-G2-6AR" secondAttribute="height" id="ynN-vN-Trx"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="153" height="179"/>
+            <connections>
+                <outlet property="imagePostImageView" destination="Nas-ok-xFc" id="zCj-Fv-S89"/>
+            </connections>
+            <point key="canvasLocation" x="96.376811594202906" y="82.03125"/>
+        </collectionViewCell>
+    </objects>
+</document>
